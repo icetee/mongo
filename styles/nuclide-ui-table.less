@@ -1,0 +1,103 @@
+.nuclide-ui-table {
+  border: 1px solid #181a1f;
+  table-layout: fixed;
+  width: 100%;
+  -webkit-user-select: none;
+  transform: translate3d(0, 0, 0);
+}
+.nuclide-ui-table-body {
+  border-top: none;
+}
+.nuclide-ui-table-body-selectable-text {
+  -webkit-user-select: text;
+}
+.nuclide-ui-table-header {
+  font-weight: bold;
+  background-color: #282c34;
+  border-bottom: 1px solid #181a1f;
+}
+.nuclide-ui-table-header,
+.nuclide-ui-table-row {
+  display: flex;
+}
+.nuclide-ui-table-full-header {
+  width: 100%;
+}
+.nuclide-ui-table-header-cell,
+.nuclide-ui-table-body-cell {
+  border-right: 1px solid #181a1f;
+  overflow: hidden;
+  padding: 2px 6px;
+}
+.nuclide-ui-table-body-cell {
+  word-break: break-word;
+  text-overflow: inherit;
+}
+.nuclide-ui-table-header-cell {
+  -webkit-user-select: none;
+  position: relative;
+  text-overflow: ellipsis;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+.nuclide-ui-table-header-cell-sortable {
+  cursor: pointer;
+}
+.nuclide-ui-table-header-cell-sortable:hover {
+  color: #d7dae0;
+}
+.nuclide-ui-table-sort-indicator {
+  position: relative;
+  display: inline-block;
+  transform: scale(0.6);
+  width: 1em;
+  height: 1em;
+}
+.nuclide-ui-table-sort-indicator .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.nuclide-ui-table-header-resize-handle {
+  cursor: ew-resize;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  margin-right: -3px;
+  z-index: 1;
+}
+.nuclide-ui-table-row-alternate {
+  background-color: #31363f;
+}
+.nuclide-ui-table-row-selectable {
+  cursor: pointer;
+}
+.nuclide-ui-table-row-selectable:not(.nuclide-ui-table-row-using-keyboard-nav):hover {
+  background-color: #3a3f4b;
+  color: white;
+}
+.nuclide-ui-table-row-selected {
+  background-color: #3a3f4b;
+  color: white;
+}
+.nuclide-ui-table:focus .nuclide-ui-table-row-selected,
+.nuclide-ui-table:focus .nuclide-ui-table-row-selected a {
+  background: #4d78cc;
+  color: #ffffff;
+}
+.nuclide-ui-table-collapsed-row {
+  word-break: break-word;
+  text-overflow: ellipsis;
+}
+.nuclide-ui-table-collapsed-row .nuclide-ui-table-body-cell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.nuclide-ui-table-empty-message {
+  font-style: italic;
+  padding: 1em;
+  text-align: center;
+}

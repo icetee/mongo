@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle mongo",
+        "command": "mongo:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Mongo",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "mongo:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

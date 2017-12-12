@@ -1,0 +1,31 @@
+{
+  "extends": "airbnb-base",
+  "plugins": ["jsx"],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "globals": {
+     "atom",
+     "document",
+     "window"
+  },
+  "rules": {
+    "no-underscore-dangle": 0,
+    "no-param-reassign": 0,
+    "no-plusplus": 0,
+    "no-console": 0,
+    "global-require": 0,
+    "max-len": 0,
+    "jsx/uses-factory": [1, {"pragma": "JSX"}],
+    "jsx/factory-in-scope": [1, {"pragma": "JSX"}],
+    "jsx/mark-used-vars": 1,
+    "jsx/no-undef": 1
+  },
+  "settings": {
+    "import/core-modules": [
+      "atom"
+    ]
+  },
+}
