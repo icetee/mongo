@@ -9,7 +9,8 @@
   "globals": {
      "atom",
      "document",
-     "window"
+     "window",
+     "MongoError"
   },
   "rules": {
     "no-underscore-dangle": 0,

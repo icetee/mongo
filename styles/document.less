@@ -1,0 +1,58 @@
+.mongo-documents {
+  height: ~"calc(100% - 41.5px)";
+  padding: 5px 5px;
+
+  ol.tree-view.tree-view-root {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  ul {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    list-style: none;
+
+    li {
+      flex: 1;
+      overflow: hidden;
+    }
+  }
+
+  li.document-key,
+  li.document-type {
+    width: 100px;
+    overflow: hidden;
+    margin: 0 5px;
+  }
+
+  li.document-value {
+    width: 500px !important;
+    overflow: hidden;
+    margin: 0 5px 0 0;
+  }
+
+  document {
+    display: block;
+    margin: 0px 0 0px 18px;
+
+    .list-tree li:not(.list-nested-item) {
+      line-height: 1.6em;
+    }
+
+    // .header.list-item {
+    //   vertical-align: middle;
+    //
+    //   .icon::before,
+    //   .icon::before {
+    //     vertical-align: middle;
+    //   }
+    // }
+
+    objects {
+      display: block;
+      margin-left: 10px;
+    }
+  }
+}
