@@ -1,6 +1,12 @@
 {
   "extends": "airbnb-base",
-  "plugins": ["jsx"],
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
   "env": {
     "browser": true,
     "es6": true,
@@ -19,8 +25,7 @@
     "no-console": 0,
     "global-require": 0,
     "max-len": 0,
-    "jsx/uses-factory": [1, {"pragma": "JSX"}],
-    "jsx/factory-in-scope": [1, {"pragma": "JSX"}],
+    "jsx/uses-factory": [1, {"pragma": "etch.dom"}],
     "jsx/mark-used-vars": 1,
     "jsx/no-undef": 1
   },
