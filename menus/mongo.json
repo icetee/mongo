@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle mongo",
-        "command": "mongo:toggle"
+        "label": "Run mongo command",
+        "command": "mongo:run"
       }
     ]
   },
